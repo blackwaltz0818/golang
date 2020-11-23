@@ -5,7 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"./MyType"
+	"HOMEWORK/MyType"
+
 	"github.com/gin-gonic/gin"
 )
 
