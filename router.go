@@ -12,14 +12,14 @@ func initRouter() *gin.Engine {
 	router.GET("/", IndexApi)
 
 	router.GET("/role", GetRolesApi)
-	/*
-		router.GET("/role", GetPersonsApi)
 
-		router.POST("/role", AddPersonApi)
+	router.GET("/role/:id", GetRoleApi)
 
-		router.PUT("/role/:id", ModPersonApi)
+	router.POST("/role", PostRoleApi)
 
-		router.DELETE("/role/:id", DelPersonApi)
-	*/
+	router.PUT("/role/:id", PutRoleApi)
+
+	router.DELETE("/role/:id", DeleteRoleApi)
+
 	return router
 }
